@@ -9,16 +9,15 @@ import UIKit
 
 class StartViewController: UIViewController {
     
-    
     @IBOutlet weak var appLabel: UILabel!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.8672644496, green: 0.8492578864, blue: 0.8938599229, alpha: 1)
         registerButton.backgroundColor = #colorLiteral(red: 0, green: 0.3094544113, blue: 0.7490285039, alpha: 1)
-        loginButton.backgroundColor = #colorLiteral(red: 0.9741447568, green: 0.9539191127, blue: 1, alpha: 1)
+        loginButton.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         appLabel.text = ""
         appLabel.textColor = #colorLiteral(red: 0.9413530231, green: 0, blue: 0, alpha: 1)
@@ -31,14 +30,6 @@ class StartViewController: UIViewController {
             }
             charIndex += 1
         }
-    }
-
-    @IBAction func registerButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
-    }
-    
-    
+    }   
 }
 

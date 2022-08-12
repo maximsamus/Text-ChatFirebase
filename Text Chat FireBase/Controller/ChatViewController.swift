@@ -20,6 +20,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         tableView.dataSource = self
+        tableView.backgroundColor = #colorLiteral(red: 0.8672644496, green: 0.8492578864, blue: 0.8938599229, alpha: 1)
         tableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         loadMessages()
     }
@@ -37,6 +38,17 @@ class ChatViewController: UIViewController {
         }
         messageTextField.text = ""
     }
+    
+    
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
     
     private func loadMessages() {
         db.collection("messages")

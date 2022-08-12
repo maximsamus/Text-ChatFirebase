@@ -112,19 +112,66 @@
                     <view key="view" contentMode="scaleToFill" id="523-Bt-8Xy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SL1-jE-U1N">
+                                <rect key="frame" x="20" y="128" width="374" height="175.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login via email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-Zr-DfU">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6Z-Zo-Nrr">
+                                        <rect key="frame" x="0.0" y="69.5" width="374" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnO-gb-YiS">
+                                        <rect key="frame" x="0.0" y="137.5" width="374" height="38"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Let's chat ▶︎">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="vmA-3y-Oa6" eventType="touchUpInside" id="Qf1-Ay-Ask"/>
+                                            <action selector="registerButtonPressed:" destination="nj2-Hf-vsg" eventType="touchUpInside" id="A5Y-E2-QfN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6TY-Y4-hS2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SL1-jE-U1N" firstAttribute="top" secondItem="6TY-Y4-hS2" secondAttribute="top" constant="40" id="FnB-pq-Zsn"/>
+                            <constraint firstItem="SL1-jE-U1N" firstAttribute="centerX" secondItem="523-Bt-8Xy" secondAttribute="centerX" id="JWW-ee-xlf"/>
+                            <constraint firstItem="6TY-Y4-hS2" firstAttribute="trailing" secondItem="SL1-jE-U1N" secondAttribute="trailing" constant="20" id="YRt-m6-eQ7"/>
+                            <constraint firstItem="SL1-jE-U1N" firstAttribute="leading" secondItem="6TY-Y4-hS2" secondAttribute="leading" constant="20" id="bFA-2O-xV6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4f5-9o-QL5"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="8ng-Zr-DfU" id="uAW-aa-InT"/>
+                        <outlet property="loginButtonLabel" destination="tnO-gb-YiS" id="MaB-hs-Sl7"/>
+                        <outlet property="passwordTextfield" destination="w6Z-Zo-Nrr" id="wjw-Df-94f"/>
+                        <segue destination="F4p-yX-RUw" kind="show" identifier="LoginToChat" id="45m-qv-O4E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTL-7m-sN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="500"/>
+            <point key="canvasLocation" x="1322" y="479"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="rAa-sI-L8D">
             <objects>
-                <viewController id="F4p-yX-RUw" sceneMemberID="viewController">
+                <viewController id="F4p-yX-RUw" customClass="ChatViewController" customModule="Text_Chat_FireBase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lna-Aw-JNm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +195,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="PoM-7V-eD9">
                                 <rect key="frame" x="20" y="128" width="374" height="175.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login via email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b0s-kA-Yd9">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Register via email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b0s-kA-Yd9">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="39.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -200,6 +247,9 @@
             <point key="canvasLocation" x="1323" y="-364"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="45m-qv-O4E"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chatImage" width="112.5" height="112.5"/>
         <systemColor name="linkColor">

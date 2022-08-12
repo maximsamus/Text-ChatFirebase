@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F710B78D28A67E370005DCDF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F710B78C28A67E370005DCDF /* ChatViewController.swift */; };
 		F73C457528A63465006A910E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C457428A63465006A910E /* AppDelegate.swift */; };
 		F73C457728A63465006A910E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C457628A63465006A910E /* SceneDelegate.swift */; };
 		F73C457928A63465006A910E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C457828A63465006A910E /* StartViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F710B78C28A67E370005DCDF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F73C457128A63465006A910E /* Text Chat FireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Chat FireBase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C457428A63465006A910E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73C457628A63465006A910E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				F73C457828A63465006A910E /* StartViewController.swift */,
 				F73C45CC28A6678E006A910E /* RegisterViewController.swift */,
 				F73C45CE28A6679A006A910E /* LoginViewController.swift */,
+				F710B78C28A67E370005DCDF /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				F73C457528A63465006A910E /* AppDelegate.swift in Sources */,
 				F73C457728A63465006A910E /* SceneDelegate.swift in Sources */,
 				F73C45CF28A6679A006A910E /* LoginViewController.swift in Sources */,
+				F710B78D28A67E370005DCDF /* ChatViewController.swift in Sources */,
 				F73C45CD28A6678E006A910E /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,10 @@ class StartViewController: UIViewController {
         appLabel.text = ""
         appLabel.textColor = #colorLiteral(red: 0.9413530231, green: 0, blue: 0, alpha: 1)
         appLabel.font = .boldSystemFont(ofSize: 50)
+        logoAnimated()
+    }
+    
+    private func logoAnimated() {
         var charIndex = 0.0
         let appLabelText = "TEXT📲 CHAT"
         for letter in appLabelText {
@@ -30,6 +34,7 @@ class StartViewController: UIViewController {
             }
             charIndex += 1
         }
-    }   
+    }
 }
+
 

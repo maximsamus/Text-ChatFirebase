@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F710B78D28A67E370005DCDF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F710B78C28A67E370005DCDF /* ChatViewController.swift */; };
+		F710B78F28A687430005DCDF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F710B78E28A687430005DCDF /* Message.swift */; };
+		F710B79228A689580005DCDF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F710B79028A689580005DCDF /* MessageCell.swift */; };
+		F710B79328A689580005DCDF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F710B79128A689580005DCDF /* MessageCell.xib */; };
 		F73C457528A63465006A910E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C457428A63465006A910E /* AppDelegate.swift */; };
 		F73C457728A63465006A910E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C457628A63465006A910E /* SceneDelegate.swift */; };
 		F73C457928A63465006A910E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C457828A63465006A910E /* StartViewController.swift */; };
@@ -49,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		F710B78C28A67E370005DCDF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F710B78E28A687430005DCDF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F710B79028A689580005DCDF /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		F710B79128A689580005DCDF /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		F73C457128A63465006A910E /* Text Chat FireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Chat FireBase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C457428A63465006A910E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73C457628A63465006A910E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		F73C459128A6432D006A910E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F710B78E28A687430005DCDF /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +159,8 @@
 			children = (
 				F73C457A28A63465006A910E /* Main.storyboard */,
 				F73C457F28A63466006A910E /* LaunchScreen.storyboard */,
+				F710B79028A689580005DCDF /* MessageCell.swift */,
+				F710B79128A689580005DCDF /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F710B79328A689580005DCDF /* MessageCell.xib in Resources */,
 				F73C458128A63466006A910E /* LaunchScreen.storyboard in Resources */,
 				F73C458E28A63595006A910E /* GoogleService-Info.plist in Resources */,
 				F73C45D028A6694E006A910E /* Assets.xcassets in Resources */,
@@ -274,11 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F73C457928A63465006A910E /* StartViewController.swift in Sources */,
+				F710B79228A689580005DCDF /* MessageCell.swift in Sources */,
 				F73C457528A63465006A910E /* AppDelegate.swift in Sources */,
 				F73C457728A63465006A910E /* SceneDelegate.swift in Sources */,
 				F73C45CF28A6679A006A910E /* LoginViewController.swift in Sources */,
 				F710B78D28A67E370005DCDF /* ChatViewController.swift in Sources */,
 				F73C45CD28A6678E006A910E /* RegisterViewController.swift in Sources */,
+				F710B78F28A687430005DCDF /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

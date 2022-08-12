@@ -175,14 +175,66 @@
                     <view key="view" contentMode="scaleToFill" id="lna-Aw-JNm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0DM-ug-MuV">
+                                <rect key="frame" x="0.0" y="111" width="414" height="674"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m2q-iP-3jY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="674"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m2q-iP-3jY" firstAttribute="leading" secondItem="0DM-ug-MuV" secondAttribute="leading" id="6G0-qL-RqE"/>
+                                    <constraint firstAttribute="trailing" secondItem="m2q-iP-3jY" secondAttribute="trailing" id="9Lq-2Z-cIH"/>
+                                    <constraint firstItem="m2q-iP-3jY" firstAttribute="top" secondItem="0DM-ug-MuV" secondAttribute="top" id="HJs-oO-y77"/>
+                                    <constraint firstItem="m2q-iP-3jY" firstAttribute="centerX" secondItem="0DM-ug-MuV" secondAttribute="centerX" id="Ioa-wR-RMC"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your message here..." textAlignment="natural" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="FGQ-TE-0tq">
+                                <rect key="frame" x="20" y="809" width="301" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="47" id="fIh-ft-65p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5f-mh-8nL">
+                                <rect key="frame" x="340" y="812" width="47" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o5f-mh-8nL" secondAttribute="height" multiplier="47:31" id="YyA-9R-Mj9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="sendMessagePressed:" destination="F4p-yX-RUw" eventType="touchUpInside" id="v8E-td-Kgs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="x6x-wR-5xo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o5f-mh-8nL" firstAttribute="bottom" secondItem="FGQ-TE-0tq" secondAttribute="bottom" id="42a-58-siF"/>
+                            <constraint firstItem="FGQ-TE-0tq" firstAttribute="top" secondItem="0DM-ug-MuV" secondAttribute="bottom" constant="24" id="9T9-QA-rAD"/>
+                            <constraint firstItem="FGQ-TE-0tq" firstAttribute="leading" secondItem="lna-Aw-JNm" secondAttribute="leadingMargin" id="A7e-2x-DUk"/>
+                            <constraint firstItem="x6x-wR-5xo" firstAttribute="trailing" secondItem="FGQ-TE-0tq" secondAttribute="trailing" constant="93" id="MwV-ha-jwT"/>
+                            <constraint firstItem="0DM-ug-MuV" firstAttribute="top" secondItem="x6x-wR-5xo" secondAttribute="top" constant="23" id="Nqn-gI-nue"/>
+                            <constraint firstItem="0DM-ug-MuV" firstAttribute="centerY" secondItem="lna-Aw-JNm" secondAttribute="centerY" id="VBN-b7-j91"/>
+                            <constraint firstItem="o5f-mh-8nL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FGQ-TE-0tq" secondAttribute="trailing" constant="8" symbolic="YES" id="Vpd-1Y-czg"/>
+                            <constraint firstItem="0DM-ug-MuV" firstAttribute="leading" secondItem="lna-Aw-JNm" secondAttribute="leading" id="cJM-69-iQu"/>
+                            <constraint firstAttribute="trailing" secondItem="0DM-ug-MuV" secondAttribute="trailing" id="voR-JP-H5F"/>
+                            <constraint firstItem="x6x-wR-5xo" firstAttribute="trailing" secondItem="o5f-mh-8nL" secondAttribute="trailing" constant="27" id="ynV-mF-28z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7aQ-mP-Bif"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="FGQ-TE-0tq" id="N7n-hV-MTh"/>
+                        <outlet property="tableView" destination="m2q-iP-3jY" id="D0q-CS-69n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggv-Ty-7oh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="102"/>
+            <point key="canvasLocation" x="2571.0144927536235" y="101.78571428571428"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="abt-Kj-4nX">
@@ -252,6 +304,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chatImage" width="112.5" height="112.5"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

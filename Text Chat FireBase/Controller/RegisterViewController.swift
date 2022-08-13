@@ -21,7 +21,13 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        
+        guard emailTextfield.text != "" && passwordTextfield.hashValue < 7 else {
+            alert(
+                title: "Register failed",
+                message: "Please, check your email and password. Password must be at least seven characters"
+            )
+            return
+        }
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let error = error {
@@ -34,3 +40,14 @@ class RegisterViewController: UIViewController {
     }
 }
 
+extension RegisterViewController {
+    
+    private func alert(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField?.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}

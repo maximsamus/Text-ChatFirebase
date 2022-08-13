@@ -18,6 +18,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "TEXT APP"
         navigationItem.hidesBackButton = true
         tableView.dataSource = self
         tableView.backgroundColor = #colorLiteral(red: 0.8672644496, green: 0.8492578864, blue: 0.8938599229, alpha: 1)
@@ -38,7 +39,6 @@ class ChatViewController: UIViewController {
         }
         messageTextField.text = ""
     }
-    
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         do {

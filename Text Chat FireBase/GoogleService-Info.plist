@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>89754573791-bsodap8rhstup6df0vgb4etv48r8k5sr.apps.googleusercontent.com</string>
+	<string>316710987776-j8mnjjc5cv1a8v69nunr25frft92mhp3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.89754573791-bsodap8rhstup6df0vgb4etv48r8k5sr</string>
+	<string>com.googleusercontent.apps.316710987776-j8mnjjc5cv1a8v69nunr25frft92mhp3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDkDvASn9bkaZGfhwEGAbbwqOHeQeSIm8o</string>
+	<string>AIzaSyBBbpGPPdq8U_4o6pJoAN4tZsntzMbHy1Y</string>
 	<key>GCM_SENDER_ID</key>
-	<string>89754573791</string>
+	<string>316710987776</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.maximsamus.TextChatFireBase</string>
 	<key>PROJECT_ID</key>
-	<string>new-text-chat</string>
+	<string>my-text-chat</string>
 	<key>STORAGE_BUCKET</key>
-	<string>new-text-chat.appspot.com</string>
+	<string>my-text-chat.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:89754573791:ios:a1ba1cc5f435ba96c6c26a</string>
+	<string>1:316710987776:ios:f127251284308b69c590e5</string>
 </dict>
 </plist>

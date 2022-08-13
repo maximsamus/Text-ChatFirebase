@@ -47,7 +47,7 @@
 		F73C45CD28A6678E006A910E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C45CC28A6678E006A910E /* RegisterViewController.swift */; };
 		F73C45CF28A6679A006A910E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C45CE28A6679A006A910E /* LoginViewController.swift */; };
 		F73C45D028A6694E006A910E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C457D28A63466006A910E /* Assets.xcassets */; };
-		F75ACD9A28A7B233009FFAEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F75ACD9928A7B233009FFAEA /* GoogleService-Info.plist */; };
+		F75ACD9C28A7BBBF009FFAEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F75ACD9B28A7BBBF009FFAEA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 		F73C458228A63466006A910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F73C45CC28A6678E006A910E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F73C45CE28A6679A006A910E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F75ACD9928A7B233009FFAEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F75ACD9B28A7BBBF009FFAEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				F73C459228A64343006A910E /* View */,
 				F73C459328A6436D006A910E /* Controller */,
 				F73C457D28A63466006A910E /* Assets.xcassets */,
-				F75ACD9928A7B233009FFAEA /* GoogleService-Info.plist */,
+				F75ACD9B28A7BBBF009FFAEA /* GoogleService-Info.plist */,
 			);
 			path = "Text Chat FireBase";
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			files = (
 				F710B79328A689580005DCDF /* MessageCell.xib in Resources */,
 				F73C458128A63466006A910E /* LaunchScreen.storyboard in Resources */,
-				F75ACD9A28A7B233009FFAEA /* GoogleService-Info.plist in Resources */,
+				F75ACD9C28A7BBBF009FFAEA /* GoogleService-Info.plist in Resources */,
 				F73C45D028A6694E006A910E /* Assets.xcassets in Resources */,
 				F73C457C28A63465006A910E /* Main.storyboard in Resources */,
 			);

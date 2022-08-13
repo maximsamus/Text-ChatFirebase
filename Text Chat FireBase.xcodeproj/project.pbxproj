@@ -17,7 +17,6 @@
 		F73C457C28A63465006A910E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C457A28A63465006A910E /* Main.storyboard */; };
 		F73C458128A63466006A910E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C457F28A63466006A910E /* LaunchScreen.storyboard */; };
 		F73C458A28A63490006A910E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F73C458928A63490006A910E /* IQKeyboardManagerSwift */; };
-		F73C458E28A63595006A910E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F73C458D28A63594006A910E /* GoogleService-Info.plist */; };
 		F73C459728A64737006A910E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F73C459628A64737006A910E /* FirebaseAnalytics */; };
 		F73C459928A64737006A910E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F73C459828A64737006A910E /* FirebaseAnalyticsOnDeviceConversion */; };
 		F73C459B28A64737006A910E /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F73C459A28A64737006A910E /* FirebaseAnalyticsSwift */; };
@@ -48,6 +47,7 @@
 		F73C45CD28A6678E006A910E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C45CC28A6678E006A910E /* RegisterViewController.swift */; };
 		F73C45CF28A6679A006A910E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C45CE28A6679A006A910E /* LoginViewController.swift */; };
 		F73C45D028A6694E006A910E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C457D28A63466006A910E /* Assets.xcassets */; };
+		F75ACD9A28A7B233009FFAEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F75ACD9928A7B233009FFAEA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,9 +63,9 @@
 		F73C457D28A63466006A910E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73C458028A63466006A910E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73C458228A63466006A910E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73C458D28A63594006A910E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F73C45CC28A6678E006A910E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F73C45CE28A6679A006A910E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F75ACD9928A7B233009FFAEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				F73C459228A64343006A910E /* View */,
 				F73C459328A6436D006A910E /* Controller */,
 				F73C457D28A63466006A910E /* Assets.xcassets */,
-				F73C458D28A63594006A910E /* GoogleService-Info.plist */,
+				F75ACD9928A7B233009FFAEA /* GoogleService-Info.plist */,
 			);
 			path = "Text Chat FireBase";
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			files = (
 				F710B79328A689580005DCDF /* MessageCell.xib in Resources */,
 				F73C458128A63466006A910E /* LaunchScreen.storyboard in Resources */,
-				F73C458E28A63595006A910E /* GoogleService-Info.plist in Resources */,
+				F75ACD9A28A7B233009FFAEA /* GoogleService-Info.plist in Resources */,
 				F73C45D028A6694E006A910E /* Assets.xcassets in Resources */,
 				F73C457C28A63465006A910E /* Main.storyboard in Resources */,
 			);
@@ -450,7 +450,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maximsamus.Text-Chat-FireBase";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximsamus.TextChatFireBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maximsamus.Text-Chat-FireBase";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximsamus.TextChatFireBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

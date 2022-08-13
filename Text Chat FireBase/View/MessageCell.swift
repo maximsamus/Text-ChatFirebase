@@ -1,6 +1,6 @@
 //
 //  MessageCell.swift
-//  Flash Chat iOS13
+//  Text Chat FireBase
 //
 //  Created by Максим Самусь on 12.08.2022.
 //
@@ -22,7 +22,5 @@ class MessageCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
-    
 }
